@@ -1,0 +1,95 @@
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.nav-link.active {
+    color: #007bff !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.btn-contact {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+/* Shadow when scrolling */
+.navbar-scroll-shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.text-rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+
+/* تأثير زر التواصل */
+.btn-contact {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* لمتصفحات WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* عرض الشريط */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* لون خلفية المسار */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* اللون الأزرق */
+    border-radius: 6px; /* انحناء الحواف */
+    border: 3px solid #f1f1f1; /* فراغ حول المقطم */
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slideDown {
+    opacity: 0;
+  animation: slideDownFade 2s ease forwards; /* مدة الانميشن 2.5 ثانية */
+}
+
+.animate-slideDown-delay {
+  animation-delay: 0.5s; /* تأخير أكبر */
+}
